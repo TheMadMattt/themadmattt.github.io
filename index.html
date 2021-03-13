@@ -1,7 +1,77 @@
-<div>
-	<a href="/frameworks/Angular">
-		<div>
-			<h1>Angular</h1>
-		</div>
-	</a>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 90vh;
+}
+
+.flex-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+  margin: auto; 
+}
+
+.column a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<div class="flex-container">
+  <div class="column">
+    <a href="frameworks/Angular/">
+      <div class="card">
+        <h3>Angular</h3>
+      </div>
+     </a>
+  </div>
+
+  <div class="column">
+    <a href="/">
+      <div class="card">
+        <h3>React</h3>
+      </div>
+     </a>
+  </div>
 </div>
+
+</body>
+</html>
