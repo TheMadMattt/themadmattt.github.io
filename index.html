@@ -10,11 +10,12 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
-  width: 100%;
+  display: flex;
 }
 
 .flex-container {
   height: 90vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,6 +23,7 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  flex-direction: row;
 }
 
 /* Float four columns side by side */
@@ -38,25 +40,46 @@ body {
 /* Responsive columns */
 @media screen and (max-width: 600px) {
   .flex-container {
-  	height: 50vh;
+  	flex-direction: column;
+	margin: 0 30px;
+  }
+  .column {
+	width: 100%;
   }
 }
 
 /* Style the counter cards */
 .card {
+  width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
-  text-align: center;
   background-color: #f1f1f1;
+  min-height: 200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+span {
+  margin-right: 20px;
+}
+
+img {
+	width: 50px;
+	height: 50px;
+}
+
 </style>
 </head>
 <body>
 <div class="flex-container">
   <div class="column">
-    <a href="">
+    <a href="/frameworks/Angular">
       <div class="card">
-        <h3>Card 1</h3>
+      	<img src="./assets/angular.png">
+        <span></span>
+        <h3>Angular</h3>
       </div>
      </a>
   </div>
@@ -64,7 +87,9 @@ body {
   <div class="column">
     <a href="">
       <div class="card">
-        <h3>Card 1</h3>
+      	<img src="./assets/react.png">
+        <span></span>
+        <h3>React</h3>
       </div>
      </a>
   </div>
