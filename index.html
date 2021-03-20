@@ -23,7 +23,13 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.framework-container {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
 }
 
 /* Float four columns side by side */
@@ -43,8 +49,15 @@ body {
   	flex-direction: column;
 	margin: 0 30px;
   }
+  .framework-container {
+	flex-direction: column;
+	gap: 20px;
+  }
   .column {
 	width: 100%;
+  }
+  .question-title {
+	margin: 0 !important;
   }
 }
 
@@ -54,7 +67,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   background-color: #f1f1f1;
-  min-height: 200px;
+  min-height: 150px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -70,29 +83,40 @@ img {
 	height: 50px;
 }
 
+.question-title {
+	margin-top: -100px;
+	margin-bottom: 50px;
+}
+
 </style>
 </head>
 <body>
 <div class="flex-container">
-  <div class="column">
-    <a href="/frameworks/Angular">
-      <div class="card">
-      	<img src="./assets/angular.png">
-        <span></span>
-        <h3>Angular</h3>
-      </div>
-     </a>
-  </div>
+	<div class="question-title">
+		<h1>Which framework do you want to test?</h1>
+	</div>
+	<div class="framework-container">
+		<div class="column">
+			<a href="/frameworks/Angular">
+			  <div class="card">
+				<img src="./assets/angular.png">
+				<span></span>
+				<h3>Angular</h3>
+			  </div>
+			</a>
+		</div>
 
-  <div class="column">
-    <a href="">
-      <div class="card">
-      	<img src="./assets/react.png">
-        <span></span>
-        <h3>React</h3>
-      </div>
-     </a>
-  </div>
+		<div class="column">
+			<a href="">
+			  <div class="card">
+				<img src="./assets/react.png">
+				<span></span>
+				<h3>React</h3>
+			  </div>
+			</a>
+		</div>
+	</div>
+
 </div>
 
 </body>
