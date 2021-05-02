@@ -1,0 +1,2 @@
+(this.webpackJsonpreactjs=this.webpackJsonpreactjs||[]).push([[7],{204:function(t,e,n){"use strict";n.r(e),n.d(e,"default",(function(){return o}));var c=n(33),r=n(24),a=n(45),u=n(44),i=n(0),s=n(2),o=function(t){Object(a.a)(n,t);var e=Object(u.a)(n);function n(){return Object(c.a)(this,n),e.apply(this,arguments)}return Object(r.a)(n,[{key:"render",value:function(){return Object(s.jsx)("h1",{children:"LocalApiBenchmark"})}}]),n}(i.Component)}}]);
+//# sourceMappingURL=7.35f14c93.chunk.js.map
